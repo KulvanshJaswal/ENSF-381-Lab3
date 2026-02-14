@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab3 -- Exercise 1</title>
+</head>
+
+<body>
+  <h1>JavaScript Lab Exercise 1</h1>
+  <script>
+    // Exercise 1A: Variable Declaration
+    var myVar = 10;
+    let myLet = 20;
+    const myConst = 30;
+
+    console.log("var:", myVar);
+    console.log("let:", myLet);
+    console.log("const:", myConst);
+
+    myLet = 50;
+    console.log("Updated let:", myLet);
+
+    try {
+      myConst = 100;
+    } catch (e) {
+      console.log("Error: cannot reassign const");
+    }
+
+    // Exercise 1B: String Operations
+
+    let string1 = "Hello, World!";
+    let string2 = "JavaScript is fun!";
+
+    console.log("Length of string1:", string1.length);
+    console.log("Concatenated:", string1 + " " + string2);
+
+    let string3 = string2.replace("fun", "awesome");
+    console.log("string3:", string3);
+
+    // Exercise 1C: String Templates
+
+    let name = "Alice";
+    let age = 25;
+
+    let greeting = `My name is ${name} and I am ${age} years old`;
+    console.log(greeting);
+
+    // Exercise 1D: Iteration
+
+    const students = ["Alice", "Tom", "Charlie"];
+    const ages = [19, 21, 20];
+
+    for (let i = 0; i < students.length; i++) {
+      let studentInfo = `My name is ${students[i]} and I am ${ages[i]} years old`;
+      console.log(studentInfo);
+    }
+
+    // Exercise 1E: Working with Dates
+
+    let currentDate = new Date();
+
+    console.log("en-CA:", currentDate.toLocaleDateString("en-CA"));
+    console.log("en-US:", currentDate.toLocaleDateString("en-US"));
+
+    let year = currentDate.getFullYear();
+    console.log("Year:", year);
+
+    let month = currentDate.getMonth();
+    console.log("Month (zero-indexed):", month);
+
+    let dayOfWeek = currentDate.toLocaleDateString("en-US", { weekday: "long" });
+    console.log("Day of the week:", dayOfWeek);
+
+    let season;
+    if (month === 11 || month === 0 || month === 1) {
+      season = "Winter";
+    } else if (month >= 2 && month <= 4) {
+      season = "Spring";
+    } else if (month >= 5 && month <= 7) {
+      season = "Summer";
+    } else {
+      season = "Fall";
+    }
+    console.log("Current season:", season);
+  </script>
+</body>
+
+</html>
