@@ -1,5 +1,4 @@
-// Exercise 3A: Arrays and Basic Methods
-console.log("--- Exercise 3A ---");
+// Exercise 3A:
 
 let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"];
 
@@ -15,8 +14,7 @@ console.log("Removed student:", removedStudent);
 console.log("Updated classRoster:", classRoster);
 console.log("Length of classRoster:", classRoster.length);
 
-// Exercise 3B: Objects with Nested Structures
-console.log("--- Exercise 3B ---");
+// Exercise 3B:
 
 let classInfo = {
   className: "ENSF381: Full-Stack Web Development",
